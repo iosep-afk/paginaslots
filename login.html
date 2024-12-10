@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Iniciar Sesión - Hobby Slots</title>
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+        }
+        /* Header Styles */
+        .main-header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: transparent;
+        }
+        .main-header a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 32px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .main-header a:hover {
+            color: #ffcc00;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #ffcc00;
+        }
+
+        /* Login Form */
+        .login-container {
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-container button {
+            width: 95%;
+            padding: 12px;
+            background-color: #ffcc00;
+            color: #222;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .login-container button:hover {
+            background-color: #e6b800;
+        }
+        .register-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .register-link a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">
+        <a href="inicio.html">Inicio</a>
+    </div>
+
+    <header>
+        <h1>Iniciar Sesión</h1>
+    </header>
+
+    <div class="login-container">
+        <h2>Accede a tu cuenta</h2>
+        <form action="#" method="POST">
+            <input type="email" name="email" placeholder="Correo Electrónico" required />
+            <input type="password" name="password" placeholder="Contraseña" required />
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <div class="register-link">
+            <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </div>
+    </div>
+</body>
+</html>
