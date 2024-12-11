@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa, Tabla y Listas</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: "Verdana", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #222;
+        }
+
+        /* Mapa Interactivo */
+        .map-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            border: 1px solid #ccc;
+            max-width: 90%;
+            height: auto;
+        }
+
+        /* Tabla */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Listas */
+        ul {
+            margin: 20px auto;
+            padding-left: 30px;
+            max-width: 80%;
+        }
+        ul ul {
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Título principal -->
+    <h1>Mapa Interactivo, Tabla y Listas</h1>
+
+    <!-- Mapa Interactivo -->
+    <div class="map-container">
+        <h2>Mapa Interactivo de Europa</h2>
+        <img src="img/mapa.png" alt="Mapa de Europa" usemap="#europa-map">
+        <map name="europa-map">
+            <area shape="rect" coords="70,252,108,281" href="https://es.wikipedia.org/wiki/España" alt="España" title="España">
+            <area shape="rect" coords="95,195,123,236" href="https://es.wikipedia.org/wiki/Francia" alt="Francia" title="Francia">
+            <area shape="rect" coords="70,130,100,182" href="https://es.wikipedia.org/wiki/Reino_Unido" alt="Reino Unido" title="Reino Unido">
+            <area shape="rect" coords="130,160,153,200" href="https://es.wikipedia.org/wiki/Alemania" alt="Alemania" title="Alemania">
+            <area shape="rect" coords="216,154,239,177" href="https://es.wikipedia.org/wiki/Bélgica" alt="Bélgica" title="Bélgica">
+            <area shape="rect" coords="168,160,200,191" href="https://es.wikipedia.org/wiki/Polonia" alt="Polonia" title="Polonia">
+            <area shape="rect" coords="209,178,279,202" href="https://es.wikipedia.org/wiki/Ucrania" alt="Ucrania" title="Ucrania">
+            <area shape="rect" coords="201,206,225,230" href="https://es.wikipedia.org/wiki/Rumania" alt="Rumania" title="Rumania">
+        </map>
+    </div>
+
+    <!-- Tabla -->
+    <h2>Ejemplo de Tabla con Celdas Extendidas</h2>
+    <table>
+        <tr>
+            <td>Ejemplo</td>
+            <td colspan="2">Ejemplo extendida a la derecha</td>
+            <td>Ejemplo</td>
+        </tr>
+        <tr>
+            <td>Ejemplo</td>
+            <td>Ejemplo</td>
+            <td rowspan="2">Ejemplo extendida hacia abajo</td>
+            <td>Ejemplo</td>
+        </tr>
+        <tr>
+            <td colspan="2">Ejemplo extendida a la izquierda</td>
+            <td>Ejemplo</td>
+        </tr>
+        <tr>
+            <td>Ejemplo</td>
+            <td>Ejemplo</td>
+            <td>Ejemplo</td>
+            <td>Ejemplo</td>
+        </tr>
+    </table>
+
+    <!-- Listas -->
+    <h2>Listas en HTML</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet
+            <ul>
+                <li>Consectetur adipiscing elit
+                    <ul>
+                        <li>Sed do eiusmod tempor incididunt ut labore</li>
+                        <li>Et dolore magna aliqua</li>
+                    </ul>
+                </li>
+                <li>Ut enim ad minim veniam
+                    <ul>
+                        <li>Quis nostrud exercitation ullamco laboris</li>
+                        <li>Nisi ut aliquip ex ea commodo consequat</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Duis aute irure dolor in reprehenderit
+            <ul>
+                <li>In voluptate velit esse cillum dolore
+                    <ul>
+                        <li>Eu fugiat nulla pariatur</li>
+                        <li>Excepteur sint occaecat cupidatat non proident</li>
+                    </ul>
+                </li>
+                <li>Sunt in culpa qui officia deserunt mollit anim
+                    <ul>
+                        <li>Id est laborum</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
